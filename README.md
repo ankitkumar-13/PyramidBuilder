@@ -97,5 +97,13 @@ Finally,
   Homepage Screen.
 </p>
  - Choose a file by browsing.
+ -  Press OK.
  
+
  Task is done now.
+
+A screen will be showing :- 
+<p align="center">
+  <img src="ReadmeStaticContent/Screen5.png"><br>  
+  Done Screen.
+</p>
