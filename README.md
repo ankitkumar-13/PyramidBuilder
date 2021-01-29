@@ -54,3 +54,10 @@ Simply, prepare HTML files using inline CSS and <script> tag for Javascript on t
 
 - #### You have to download the PyramidBuilder.py file from this repository. Though repository may be a big word, simply download the file from the main branch.(above 👆)
 - #### Then,  the only think you to do is to double-click on it and further the program is self explanatory. It's a GUI based program, so you  don't have to worry about learning to code.
+
+# A Tutorial:
+#### On the Starting screen you will see :-
+<p align="center">
+  <img src="ReadmeStaticContent/Screen1.png"><br>  
+  Starting Screen.
+</p>
