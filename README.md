@@ -17,7 +17,7 @@ Before going to use the PyramidBuilder, you need to install some modules.
 
 
 - Use the pip command :-
-#>On Windows :-  
+>On Windows :-  
 >Type the following command :-  
 >```cmd
 >pip install PySimpleGUI BeautifulSoup4
