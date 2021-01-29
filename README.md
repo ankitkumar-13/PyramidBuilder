@@ -37,3 +37,15 @@ Simply, prepare HTML files using inline CSS and <script> tag for Javascript on t
 - #### You have to download the PyramidBuilder.py file from this repository. Though repository may be a big word, simply download the file from the main branch.(above 👆)
 - #### Then,  the only think you to do is to double-click on it and further the program is self explanatory. It's a GUI based program, so you  don't have to worry about learning to code.
 
+# Configuration that You Need to Do :-
+Due to some reasons, such as time unavailability, some configuration you also need to do.
+Although in some future update, this feature will be automatic (Hoping Soon!).
+Till then, manual configuration has to be done.
+  
+In HTML files, **Images should be in Base64 format**(textual),  
+For example, if you have an image link, i.e. `<img src='Folder/SubFolder/abc.png' width=300 height=550>` then it should be changed as, `<img src='data:image/png';base64, code'>`, you can get it converted through many websites such as  CodeBeautify on `https://codebeautify.org/image-to-base64-converter`.
+There you can get the Base64 code, complete `<img>` tag with everything done is also provided.
+Now handling large Base64 Code can be done using Notepad. Since its smoother while handling such large code.
+
+Now, links,
+Linking should be done in the following way :-
