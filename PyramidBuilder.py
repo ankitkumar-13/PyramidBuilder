@@ -125,7 +125,7 @@ layout2 = [  # Layout 2 for choosing Output Folder & BUILD button.
     [sg.Text(size=(34, 7), key='-Progress-')]
 ]
 
-window1 = sg.Window('Window Title', layout1)
+window1 = sg.Window('HTML File Chooser', layout1)
 
 OutputList = ()
 while True:
