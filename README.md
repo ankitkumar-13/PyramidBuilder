@@ -74,3 +74,28 @@ Next, You will see a screen like :-
   <img src="ReadmeStaticContent/Screen2.png"><br>  
   Folder Choosing Screen.
 </p>
+
+- Click on Browse Button.
+- Choose a Folder where you want the Program to create the Pyramid App File (The Output).
+- Then, Click BUILD button.
+- It will ask you for a port number(You can enter a number between 8000 - 65000).
+
+A screen like :-
+
+Next, You will see a screen like :-
+<p align="center">
+  <img src="ReadmeStaticContent/Screen3.png"><br>  
+  Port Number Screen.
+</p>
+
+Finally,
+ - It will ask for a Homepage file, a HTML file that automatically opens up as a starting screen.
+ 
+ Next, You will see a screen like :-
+<p align="center">
+  <img src="ReadmeStaticContent/Screen4.png"><br>  
+  Homepage Screen.
+</p>
+ - Choose a file by browsing.
+ 
+ Task is done now.
