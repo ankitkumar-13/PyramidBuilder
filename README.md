@@ -61,3 +61,16 @@ Simply, prepare HTML files using inline CSS and <script> tag for Javascript on t
   <img src="ReadmeStaticContent/Screen1.png"><br>  
   Starting Screen.
 </p>
+
+- Click on Browse Button.
+- Choose a File.
+- Click Next File.
+- Browse Another File.
+##### When You are done choosing all the files press Submit All button.
+
+
+Next, You will see a screen like :-
+<p align="center">
+  <img src="ReadmeStaticContent/Screen2.png"><br>  
+  Folder Choosing Screen.
+</p>
