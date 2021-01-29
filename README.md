@@ -5,3 +5,6 @@ As wrote above, anyone can easily develop an app using HTML, CSS and Javascript 
 
 # Steps to create an App :-
 Simply, prepare HTML files using inline CSS and <script> tag for Javascript on the same HTML file. Multiple files can be used but individual CSS and Javascript for them should be in the same file in which you have HTML.
+
+You have to download the PyramidBuilder.py file from this repository. Though repository may be a big word, simply download the file from the main branch.(above 👆)
+Then,  the only think you to do is to double-click on it and further the program is self explanatory. It's a GUI based program, so you  don't have to worry about learning to code.
