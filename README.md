@@ -30,13 +30,6 @@ Before going to use the PyramidBuilder, you need to install some modules.
 
 ------------
 
-
-# Steps to create an App :-
-Simply, prepare HTML files using inline CSS and <script> tag for Javascript on the same HTML file. Multiple files can be used but individual CSS and Javascript for them should be in the same file in which you have HTML.
-
-- #### You have to download the PyramidBuilder.py file from this repository. Though repository may be a big word, simply download the file from the main branch.(above 👆)
-- #### Then,  the only think you to do is to double-click on it and further the program is self explanatory. It's a GUI based program, so you  don't have to worry about learning to code.
-
 # Configuration that You Need to Do :-
 Due to some reasons, such as time unavailability, some configuration you also need to do.
 Although in some future update, this feature will be automatic (Hoping Soon!).
@@ -49,3 +42,15 @@ Now handling large Base64 Code can be done using Notepad. Since its smoother whi
 
 Now, links,
 Linking should be done in the following way :-
+A Normal hyperlink to another HTML file, i.e., `<A href="Template/Pages/abc.html"> Some Text </A>` should be written as `<A href='/abc.html'>` only.
+Forward slash and file name with extension is needed `<A href='/FileName.html'>Some Text </A>`.
+
+That's enough.
+
+------------
+
+# Steps to create an App :-
+Simply, prepare HTML files using inline CSS and <script> tag for Javascript on the same HTML file. Multiple files can be used but individual CSS and Javascript for them should be in the same file in which you have HTML.
+
+- #### You have to download the PyramidBuilder.py file from this repository. Though repository may be a big word, simply download the file from the main branch.(above 👆)
+- #### Then,  the only think you to do is to double-click on it and further the program is self explanatory. It's a GUI based program, so you  don't have to worry about learning to code.
