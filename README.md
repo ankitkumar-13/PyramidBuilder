@@ -10,17 +10,17 @@ As wrote above, anyone can easily develop an app using HTML, CSS and Javascript 
 # Installing needed Modules :-
 Before going to use the PyramidBuilder, you need to install some modules.
 - Go to the Command Line:-
->####On Windows :-
- Click on Start Menu Button.
- Search by typing cmd.
- Click on the app named Command Prompt.
+>On Windows :-
+>Click on Start Menu Button.
+>Search by typing cmd.
+>Click on the app named Command Prompt.
 
 - Use the pip command :-
->### On Windows :-
-##### Type the following command :-
-```
-pip install PySimpleGUI BeautifulSoup4
-```
+> On Windows :-
+> Type the following command :-
+>```
+>pip install PySimpleGUI BeautifulSoup4
+>```
 
 ##### Some code will be executed there.
 ##### This is all you need for executed PyramidBuilder.
