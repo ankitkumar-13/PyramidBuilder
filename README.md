@@ -39,6 +39,9 @@ Now handling large Base64 Code can be done using Notepad. Since its smoother whi
 
 That's enough.
 
+#### NOTE : Don't create hyperlinks on text to other websites like `<A href='https://www.abc.com' > Some Text </A>`, else you an use them as text. By simply writing http://www.abc.com/ in between the text. 
+#### As : `You can go to link : http://www.abc.com/`
+
 ------------
 
 # Steps to create an App :-
