@@ -26,7 +26,7 @@ Before going to use the PyramidBuilder, you need to install some modules.
 >```
 
 ##### Some code will be executed there.
-##### This is all you need for executed PyramidBuilder.
+##### This is all you need for executing PyramidBuilder.
 
 ------------
 
