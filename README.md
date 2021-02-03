@@ -31,19 +31,11 @@ Before going to use the PyramidBuilder, you need to install some modules.
 ------------
 
 # Configuration that You Need to Do :-
-Due to some reasons, such as time unavailability, some configuration you also need to do.
-Although in some future update, this feature will be automatic (Hoping Soon!).
-Till then, manual configuration has to be done.
   
 In HTML files, **Images should be in Base64 format**(textual),  
 For example, if you have an image link, i.e. `<img src='Folder/SubFolder/abc.png' width=300 height=550>` then it should be changed as, `<img src='data:image/png';base64, code'>`, you can get it converted through many websites such as  CodeBeautify on `https://codebeautify.org/image-to-base64-converter`.
 There you can get the Base64 code, complete `<img>` tag with everything done is also provided.
 Now handling large Base64 Code can be done using Notepad. Since its smoother while handling such large code.
-
-Now, links,
-Linking should be done in the following way :-
-A Normal hyperlink to another HTML file, i.e., `<A href="Template/Pages/abc.html"> Some Text </A>` should be written as `<A href='/abc.html'>` only.
-Forward slash and file name with extension is needed `<A href='/FileName.html'>Some Text </A>`.
 
 That's enough.
 
