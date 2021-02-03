@@ -4,6 +4,7 @@ import PySimpleGUI as sg
 import os
 from html.parser import HTMLParser
 from bs4 import BeautifulSoup
+import re
 
 # ---------------------------------------------------------------------------------------------------------------------------------
 #                                                     NEEDS OF BUILD FUNCTION
@@ -13,6 +14,14 @@ def Code_Beautifier(document):  # Organises the text of HTML Document.
     soup=BeautifulSoup(document, 'html.parser')
     _return = soup.prettify()
     return _return
+
+def Link_Handler(IN):  # Automatically handles link address with relative address (Converts them to Individual File Addresses).
+    match = re.findall(r'<a href="(.*?)"', IN)
+    OUT=IN
+    for link in match:
+        new_link=(get_file_name(link))[1]
+        OUT = OUT.replace(link, "/"+new_link)
+    return OUT
 
 def get_file_name(Path):  # Returns a tuple with File name without extension as first element and file name with extension as second from the full path of the file.
     _return_with_extension = ""
@@ -32,8 +41,10 @@ def get_file_name(Path):  # Returns a tuple with File name without extension as 
 
 
 def func_creator(FileName, Code):  # Returns the function as string, needed by pyramid module for HTML page.
+    unhandled_beautified_code =  Code_Beautifier(Code)
+    completely_handled_code = Link_Handler(unhandled_beautified_code)
     _return = "def " + FileName + "(request):" + "\n" + \
-              "  " + "return Response(\"\"\"" + Code_Beautifier(Code) + "\"\"\")" + "\n" + "\n"
+              "  " + "return Response(\"\"\"" + completely_handled_code + "\"\"\")" + "\n" + "\n"
     return _return
 
 
@@ -58,6 +69,8 @@ def build(Input_List, Output_Directory, port, On_Start_File):  # Main Script for
     final_lines = """if __name__ == '__main__':\n    with Configurator() as config:\n""" + Routes + """        app = config.make_wsgi_app()\n        """ + Home_Page(On_Start_File, port) + """\n        """ + """server = make_server('0.0.0.0', """ + port + """, app)\n        server.serve_forever()"""
     os.mkdir(Output_Directory + "/" + "Build")  # Creating a directing for storing finally built file.
     mf = open(Output_Directory + "/" + "Build" + "/" + "AppFile.py", "a")  # Creates and opens a file for final code.
+    mf.write("# coding: ANSI")  # Some opening error removal by defining encoding.
+    mf.write("\n")
     mf.write(fixed_imports)  # Adds lines of code containg module imports needed for pyramid program to run.
     mf.write("\n")
     mf.write("\n")
@@ -157,7 +170,7 @@ while True:
                         if toShow2[1] == 'CL':
                             window2['-Progress-'].update(toShow2[0])
                             Port_Number = sg.popup_get_text('Port Checker', 'Enter the Port Number to set the server on :-')
-                            Start_Page = sg.popup_get_file("Choose the to open as Homepage : -", title='File Choose :-')
+                            Start_Page = sg.popup_get_file("Choose the file you want to automatically open as Homepage: -", title="File Chooser:-")
                             try:  # MAIN BUILD EXECUTION :-
                                 build(OutputList, values2['-IN-'], Port_Number, Start_Page)
                                 sg.popup("Success", "Your Build of the App was Successful.")
@@ -187,7 +200,9 @@ while True:
                         if toShow2[1] == 'CL':
                             window2['-Progress-'].update(toShow2[0])
                             Port_Number = sg.popup_get_text('Port Checker', 'Enter the Port Number to set the server on :-')
-                            Start_Page = sg.popup_get_file("Choose the file : -")
+                            Start_Page = sg.popup_get_file("Choose the file you want to automatically open as Homepage: -", title="File Chooser:-")
+                            build(OutputList, values2['-IN-'], Port_Number, Start_Page)
+                            sg.popup("Success", "Your Build of the App was Successful.")
                             try:  # MAIN BUILD EXECUTION :-
                                 build(OutputList, values2['-IN-'], Port_Number, Start_Page)
                                 sg.popup("Success", "Your Build of the App was Successful.")
