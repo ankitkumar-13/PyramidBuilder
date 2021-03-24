@@ -22,7 +22,7 @@ Before going to use the PyramidBuilder, you need to install some modules.
 >  
 >Type the following command :-  
 >```cmd
->pip install PySimpleGUI BeautifulSoup4
+>pip install PyramidBuilder
 >```
 
 ##### Some code will be executed there.
